@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import * as font from '../fonts/font.js';
+import * as font from '../fonts';
 
 export default createGlobalStyle`
 * {
@@ -57,7 +57,7 @@ img {
 
 @font-face {
   font-family: "DMSans";
-  src: local('DMSans400'), url('${font.DMSans400}') format("woff2");
+  src: url('${font.DMSans400}') format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
@@ -65,7 +65,7 @@ img {
 
 @font-face {
   font-family: "DMSans";
-  src: local('DMSans700'), url('${font.DMSans700}') format("woff2");
+  src: url('${font.DMSans700}') format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: block;
