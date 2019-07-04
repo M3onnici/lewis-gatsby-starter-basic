@@ -63,7 +63,7 @@ const Head = ({ lang, title, description }) => {
       ]}
     />
   );
-}
+};
 
 Head.defaultProps = {
   lang: `en`,
