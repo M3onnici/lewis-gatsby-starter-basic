@@ -6,7 +6,7 @@ module.exports = {
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
     siteUrl: `https://www.lewis-gatsby-starter-basic.firebaseapp.com`,
-    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-basic`
+    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-basic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,4 +35,4 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
   ],
-}
+};
