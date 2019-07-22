@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Head, Heading1, Layout, TextBody } from '../components';
+import { Head, HeadingXL, Layout, TextBody } from '../components';
 
 const Index = () => (
   <Layout>
     <Head title={`Home`} />
-    <Heading1>Lewis Gatsby Starter Basic</Heading1>
+    <HeadingXL>Lewis Gatsby Starter Basic</HeadingXL>
     <TextBody>
       This is a custom basic Gatsby starter template to start a website.
     </TextBody>
