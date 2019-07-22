@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Head, HeadingXL, Layout } from '../components';
+import { HeadingXL, Layout, SEO } from '../components';
 
 const NotFoundPage = () => (
   <Layout>
-    <Head title={404} />
+    <SEO title={404} />
     <HeadingXL>Page not found</HeadingXL>
   </Layout>
 );

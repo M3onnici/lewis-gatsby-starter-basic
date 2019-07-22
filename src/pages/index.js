@@ -1,6 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import { Head, HeadingXL, Layout } from '../components';
+import { HeadingXL, Layout, SEO } from '../components';
 
 const TextHome = styled.p`
   max-width: 28em;
@@ -18,9 +19,9 @@ const TextHome = styled.p`
   }
 `;
 
-const Index = () => (
+const Home = () => (
   <Layout>
-    <Head title={`Home`} />
+    <SEO title={`Home`} />
     <HeadingXL>Lewis Gatsby Starter Basic</HeadingXL>
     <TextHome>
       This is a custom basic Gatsby starter template to start a website.
@@ -28,4 +29,4 @@ const Index = () => (
   </Layout>
 );
 
-export default Index;
+export default Home;
