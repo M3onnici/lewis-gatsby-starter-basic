@@ -22,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lewis Gatsby Starter i18n`,
-        short_name: `LGSi18n`,
+        name: `Lewis Gatsby Starter Basic`,
+        short_name: `LGSB`,
         start_url: `/`,
-        background_color: `#fafafa`,
-        theme_color: `#fafafa`,
+        background_color: `#fcfcfc`,
+        theme_color: `#fcfcfc`,
         display: `standalone`,
       },
     },
