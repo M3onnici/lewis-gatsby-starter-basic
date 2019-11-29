@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.p`
+export const Text = styled.p`
   max-width: 45em;
   line-height: 1.4;
   margin-left: auto;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { GlobalStyles } from '../components';
 
-const Wrapper = styled.div`
+const Content = styled.div`
   padding: 0 var(--sides-padding-desktop);
   margin: 0 auto;
   max-width: 1400px;
@@ -13,22 +13,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const Content = styled.main`
-  max-width: 900px;
-  margin: 0 auto;
-
-  @media (max-width: 849px) {
-    width: 100%;
-  }
-`;
-
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <>
     <GlobalStyles />
-    <Wrapper>
-      <Content>{children}</Content>
-    </Wrapper>
+    <Content>{children}</Content>
   </>
 );
-
-export default Layout;

@@ -2,11 +2,6 @@ module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter Basic`,
     description: `A custom basic Gatsby starter template to start a website.`,
-    author: `Lewis Llobera`,
-    twitter: `@lewislbr`,
-    email: `billobera@gmail.com`,
-    siteUrl: `https://www.lewis-gatsby-starter-basic.firebaseapp.com`,
-    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-basic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,7 +9,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-transformer-sharp`,

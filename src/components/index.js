@@ -1,7 +1,5 @@
-import GlobalStyles from './GlobalStyles';
-import HeadingXL from './HeadingXL';
-import Layout from './Layout';
-import SEO from './SEO';
-import TextBody from './TextBody';
-
-export { GlobalStyles, HeadingXL, Layout, SEO, TextBody };
+export { GlobalStyles } from './GlobalStyles';
+export { Heading } from './Heading';
+export { Layout } from './Layout';
+export { SEO } from './SEO';
+export { Text } from './Text';
