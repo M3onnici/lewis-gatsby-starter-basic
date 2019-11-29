@@ -30,15 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding-top: 20vh;
-    line-height: 1;
     background-color: var(--background-color);
     font-family: 'IBMPlexMono', sans-serif;
     font-size: 19px;
@@ -50,40 +42,84 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  * {
-    -webkit-box-sizing: border-box;
+  /* CSS Reset */
+
+  /* Box sizing rules */
+  *,
+  *::after,
+  *::before {
     box-sizing: border-box;
   }
 
+  /* Remove default padding */
+  ol[class],
+  ul[class] {
+    padding: 0;
+  }
+
+  /* Remove default margin */
+  blockquote,
+  body,
+  dd,
+  dl,
+  figcaption,
+  figure,
   h1,
   h2,
   h3,
   h4,
-  h5,
-  h6 {
+  li,
+  ol[class],
+  p,
+  ul[class] {
     margin: 0;
-    -webkit-margin-before: 0;
-    margin-block-start: 0;
-    -webkit-margin-after: 0;
-    margin-block-end: 0;
-    -webkit-margin-start: 0;
-    margin-inline-start: 0;
-    -webkit-margin-end: 0;
-    margin-inline-end: 0;
-    display: inline-block;
   }
 
-  a {
-    text-decoration: none;
-    -webkit-tap-highlight-color: hsla(0, 0%, 0%, 0);
-    -webkit-tap-highlight-color: transparent;
-    color: inherit;
+  /* Set core body defaults */
+  body {
+    line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
   }
 
+  /* Remove list styles on ul, ol elements with a class attribute */
+  ul[class],
+  ol[class] {
+    list-style: none;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Make images easier to work with */
   img {
+    display: block;
     max-width: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
+  }
+
+  /* Natural flow and rhythm in articles by default */
+  article > * + * {
+    margin-top: 1em;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  /* Remove all animations and transitions for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 `;
