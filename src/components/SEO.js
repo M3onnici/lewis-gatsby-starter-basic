@@ -25,20 +25,24 @@ export const SEO = ({ title }) => {
       titleTemplate={`%s ― ${data.site.siteMetadata.title}`}
       meta={[
         {
-          name: `description`,
-          content: data.site.siteMetadata.description,
+          property: `title`,
+          content: title,
         },
         {
           property: `og:title`,
           content: title,
         },
         {
-          property: `og:description`,
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `description`,
           content: data.site.siteMetadata.description,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          property: `og:description`,
+          content: data.site.siteMetadata.description,
         },
         {
           name: `twitter:description`,
